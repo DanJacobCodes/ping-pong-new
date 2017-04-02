@@ -14,8 +14,12 @@ function pingPong(numbers) {
 }
 
 function returnedNumbers(numbers) {
-   if (n) {
-
+   if (isNan(numbers)) {
+     alert("Oops!Please enter a number")
+   } else {
+     for (var i = 1; i < numbers.length; i++) {
+       returnedNumbers.push(pingPong(i));
+     }
    }
 
 }
