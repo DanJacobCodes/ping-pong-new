@@ -23,7 +23,6 @@ function returnedNumbers(numbers) {
        returnedNumbers.push(pingPong(i));
      }
    }
-
 }
  //User Interface Logic//
  $(document).ready(function() {
@@ -35,6 +34,11 @@ function returnedNumbers(numbers) {
 
       returnedNumbers(userInput);
 
-   })
+   $("#output").empty();
+      pingPongList.forEach(function(numbers) {
+        $("#output").append("<li>" + numbers + "</li>");
+      });
 
- })
+   });
+
+ });
