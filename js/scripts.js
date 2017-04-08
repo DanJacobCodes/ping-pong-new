@@ -3,12 +3,12 @@ var pingPongList = [];
 
 function pingPong(numbers) {
   if (numbers % 15 === 0) {
-    return 'Ping Pong!';
+    return "Ping Pong";
   } else if (numbers % 5 === 0) {
-    return 'Pong!';
+    return "Pong";
 
   } else if (numbers % 3 === 0){
-    return 'Ping !';
+    return "Ping";
   }
   else {
   return numbers;
@@ -16,29 +16,28 @@ function pingPong(numbers) {
 }
 
 function returnedNumbers(numbers) {
-   if (isNan(numbers)) {
-     alert("Oops!Please enter a number")
-   } else {
-     for (var i = 1; i <=numbers; i++) {
-       returnedNumbers.push(pingPong(i));
+   if (isNaN(numbers) || (numbers < 0)) {
+     alert("Oops!Please enter a  valid number")
+   }
+   else {
+     for(var i = 1; i <=numbers; i++) {
+       pingPongList.push(pingPong(i));
      }
    }
 }
  //User Interface Logic//
  $(document).ready(function() {
-   $("form#pingPongGame").submit(function(event){
+   $("form#pingPongGame").submit(function(event) {
       event.preventDefault();
 
-      var userInput = parseInt($("form#input").val());
+      var userInput = parseInt($("#input").val());
       pingPongList = [];
 
       returnedNumbers(userInput);
 
    $("#output").empty();
       pingPongList.forEach(function(numbers) {
-        $("#output").append("<li>" + numbers + "</li>");
+        $("ul#output").append("<li>" + numbers + "</li>");
       });
-
    });
-
  });
