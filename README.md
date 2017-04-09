@@ -14,7 +14,7 @@ Specs| Input | Output |
 |Users will enter a number and have a list displayed starting from 1 ending at their inputted number | 2| 1, 2|
 |Users can enters numbers divisible by 3 designated as Ping | 3 | 1,2,Ping|
 |Users can enters numbers divisible by 5 designated as Pong | 5 | 1,2,Ping,4,Pong|
-|Users can enters numbers divisible by 15 designated as Ping Pong | 1,2,Ping,4,Pong, Ping,7,8,Ping,Pong, 11,Ping,13,14,Ping Pong|
+|Users can enters numbers divisible by 15 designated as Ping Pong | 15 |1,2,Ping,4,Pong, Ping,7,8,Ping,Pong, 11,Ping,13,14,Ping Pong|
 
 ## Setup/Installation
 1.Clone this repository
