@@ -18,7 +18,7 @@ Specs| Input | Output |
 
 ## Setup/Installation
 1.Clone this repository
-1.Open the index.html file in your browser
+2.Open the index.html file in your browser
 
 ## Technologies Used
 HTML
