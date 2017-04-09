@@ -4,7 +4,7 @@
 
 #### By Dan Jacob
 
-##Description
+## Description
 This program will test simple jQuery and JavaScript functionality. By allowing users to input a number equal to or greater than 1 - users will be able to see their selected numbers outputted. However, numbers divisble by 3,5, and 15 will be output as "Ping", "Pong", and "Ping Pong." Users will not be able to input words or characters, if the user does so, the program will detect this and alert users to enter a valid number.
 
 ## Specs
@@ -18,6 +18,7 @@ Specs| Input | Output |
 
 ## Setup/Installation
 1.Clone this repository
+
 2.Open the index.html file in your browser
 
 ## Technologies Used
